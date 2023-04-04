@@ -1,0 +1,7 @@
+{
+    "screenElements" : {
+        "statusBar" : {
+            "statusBarLocation" : "top"
+        }
+    }
+}

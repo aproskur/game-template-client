@@ -1,0 +1,202 @@
+{
+  "ConfigFile": "file",
+  "GameType": "type-1",
+  "CustomGameStyleFile": "ссылка на файл стилей для игры",
+  "GameStyle": "стиль_для_игры",
+  "timeline": 
+    [
+      "GameScreen1",
+      "GameScreen2"
+    ],
+  
+  "gameScreens": {
+    "GameScreen1": {
+      "elementType": "gameScreen",
+      "background": "./arctic-background.png",
+      "cssClass" : "container",
+      "elements": {
+        "statusBar": {
+          "type": "statusBarType.json",
+          "data" : "status-bar-left-data.json",
+          "elementType": "statusBar",
+          "cssClass": "statusBar-left"
+        },
+        "gameButton" : {
+          "text" : "Начать игру",
+          "onClick" : "handleClick"
+        },
+
+        "cardsContainer": {
+          "cardsList": [
+            "card1",
+            "card2"
+          ],
+          "cssClass" : "cards-container",
+          "cards" : {
+                      "card1": {
+                        "type": "statusBarType.json",
+                        "elementType": "statusBar",
+                        "text": "Текст первой карточки",
+                        "textFlipped": "Текст на обратной стороне карточки",
+                        "cssClass": "game-card",
+                        "onClick": {
+                          "elemetType": "event",
+                          "clientFunction": "onCardClick"
+                        },
+                        "action" : [["знания",3],["репутация",-1],["энергия", -1],["осталось дней", -2 ]],
+                        "goToNextScreen" : false
+                      },
+                      "card2": {
+                        "type": "statusBarType.json",
+                        "elementType": "statusBar",
+                        "text": "Текст второй карточки",
+                        "textFlipped": "Текст на обратной стороне карточки",
+                        "cssClass": "game-card",
+                        "onClick": {
+                          "elemetType": "event",
+                          "clientFunction": "onCardClick"
+                        },
+                        "action" : [["знания",8],["репутация",2],["энергия",-1],["осталось дней", -1 ]],
+                        "goToNextScreen" : true
+                      }
+            }
+            
+        },
+        "GameScreen2": {
+          "type": "CustomScreenTypeInfo",
+          "background": "./arctic-background.png",
+          "font-color": "#ffffff",
+          "screenElements": [
+            "cardID1",
+            "cardID2",
+            "cardID3"
+          ]
+        }
+      },
+      "CustomTypes": {
+        "CustomScreenTypeInfo": {
+          "columnCount": 1,
+          "header": true,
+          "screenStyle": "screenStyle"
+        },
+        "CustomScreenTypeTeam": {
+          "columnCount": 3,
+          "header": true,
+          "screenStyle": "screenStyle"
+        },
+        "CustomElementTypeCard": {
+          "text": "Первая информационная карточка. Игра Антарктика. Поиграем"
+        }
+      },
+      "ScreenElements": {
+        "ScreenElement1": {
+          "type": "CustomElementTypeCard",
+          "text": "Первая информационная карточка. Игра Антарктика. Поиграем"
+        },
+        "ScreenElement2": {
+          "type": "ElementTypeCard",
+          "text": "Первая информационная карточка. Игра Антарктика. Поиграем"
+        }
+      }
+    },
+    "GameScreen2": {
+      "elementType": "gameScreen",
+      "background": "./arctic-background.png",
+      "cssClass" : "container",
+      "elements": {
+        "statusBar": {
+          "type": "statusBarType.json",
+          "data" : "status-bar-data.json",
+          "elementType": "statusBar",
+          "cssClass": "statusBar-top"
+        },
+        "gameButton" : {
+          "text" : "Начать игру",
+          "onClick" : "handleClick"
+        },
+
+        "cardsContainer": {
+          "cardsList": [
+            "card3",
+            "card4",
+            "card5"
+          ],
+          "cssClass" : "cards-container",
+          "cards" : {
+                      "card3": {
+                        "type": "statusBarType.json",
+                        "elementType": "statusBar",
+                        "text": "Текст первой карточки",
+                        "textFlipped": "Текст на обратной стороне карточки",
+                        "cssClass": "info-card",
+                        "onClick": {
+                          "elemetType": "event",
+                          "clientFunction": "onCardClick"
+                        }
+                      },
+                      "card4": {
+                        "type": "statusBarType.json",
+                        "elementType": "statusBar",
+                        "text": "Текст второй карточки",
+                        "textFlipped": "Текст на обратной стороне карточки",
+                        "cssClass": "info-card",
+                        "onClick": {
+                          "elemetType": "event",
+                          "clientFunction": "onCardClick"
+                        }
+                      },
+                      "card5": {
+                        "type": "statusBarType.json",
+                        "elementType": "statusBar",
+                        "text": "Текст третьей карточки",
+                        "textFlipped": "Текст на обратной стороне карточки",
+                        "cssClass": "info-card",
+                        "onClick": {
+                          "elemetType": "event",
+                          "clientFunction": "onCardClick"
+                        }
+                      }
+            }
+            
+        },
+        "GameScreen2": {
+          "type": "CustomScreenTypeInfo",
+          "background": "./arctic-background.png",
+          "font-color": "#ffffff",
+          "screenElements": [
+            "cardID1",
+            "cardID2",
+            "cardID3"
+          ]
+        }
+      },
+      "CustomTypes": {
+        "CustomScreenTypeInfo": {
+          "columnCount": 1,
+          "header": true,
+          "screenStyle": "screenStyle"
+        },
+        "CustomScreenTypeTeam": {
+          "columnCount": 3,
+          "header": true,
+          "screenStyle": "screenStyle"
+        },
+        "CustomElementTypeCard": {
+          "text": "Первая информационная карточка. Игра Антарктика. Поиграем"
+        }
+      },
+      "ScreenElements": {
+        "ScreenElement1": {
+          "type": "CustomElementTypeCard",
+          "text": "Первая информационная карточка. Игра Антарктика. Поиграем"
+        },
+        "ScreenElement2": {
+          "type": "ElementTypeCard",
+          "text": "Первая информационная карточка. Игра Антарктика. Поиграем"
+        }
+      }
+    }
+
+    
+  }
+}

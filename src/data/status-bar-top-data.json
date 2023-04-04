@@ -1,0 +1,56 @@
+{ "status" : [
+    {
+        "id" : 1,
+        "title" : "Осталось дней",
+        "score" : 45
+    },
+    { 
+        "id" : 2,
+        "title" : "Знания",
+        "image" : "./images/sidebar-top/Znania.png",
+        "score" : -1
+    },
+    { 
+        "id" : 3,
+        "title" : "Доверие",
+        "image" : "./images/sidebar-top/Doverie.png",
+        "score" : 15
+     },
+     { 
+        "id" : 4,
+        "title" : "Энергия",
+        "image" : "./images/sidebar-top/Energia.png",
+        "score" : 7
+     },
+     { 
+        "id" : 5,
+        "title" : "Контроль",
+        "image" : "./images/sidebar-top/Kontrol.png",
+        "score" : -8
+     },
+     { 
+        "id" : 6,
+        "title" : "Статус",
+        "image" : "./images/sidebar-top/Status.png",
+        "score" : -5
+     },
+     { 
+        "id" : 7,
+        "title" : "Контакт",
+        "image" : "./images/sidebar-top/Kontact.png",
+        "score" : 10
+     },
+     { 
+        "id" : 8,
+        "title" : "Конструктив",
+        "image" : "./images/sidebar-top/Konstructiv.png",
+        "score" : 8
+     },
+     { 
+        "id" : 9,
+        "title" : "Гибкость",
+        "image" : "./images/sidebar-top/Gibkost.png",
+        "score" : 2
+     }
+]
+}
