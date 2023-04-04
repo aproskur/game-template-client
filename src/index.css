@@ -1,3 +1,11 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +13,188 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /*
+  background-image: url('./images/Fon_1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.statusBar-left {
+  grid-row-start: 1;
+  width: 90%;
+}
+
+.statusBar-top {
+  z-index: 100;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+
+
+.statusBar-top ul li:nth-child(1){
+  margin-left: 80px;
+  margin-right: 20px;
+  width: 100px;
+  display: flex;
+  list-style: none;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 15px 15px;
+  color: #fff;
+  flex-direction: column;
+}
+
+.statusBar-top ul li:nth-child(1) span:nth-child(1) {
+  background-color:rgba(1, 33, 65, 0.5);
+  font-size: 30px;
+}
+
+.statusBar-top ul li:nth-child(1) span:nth-child(2) {
+  text-align: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.statusBar-top ul {  
+  display: flex;
+  gap: 2.35em;
+  max-height: 77px;
+
+}
+
+.statusBar-top ul li {
+  list-style: none;
+  width: 5%;
+  height: 68px;
+  text-transform: lowercase;
+  color: #153a5f;
+  font-weight: 700;
+  background-repeat: no-repeat;
+  background-size: 90% 50%;
+  padding-top: 10px 5px;
+}
+
+.statusBar-top ul li:not(:first-child) .text {
+  color: #fff;
+  font-size: 0.95rem;
+  margin-top: 1em;
+}
+
+
+
+.statusBar-left ul li:not(:first-child) {
+  display: flex;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: cover;
+  list-style: none;
+  text-transform: lowercase;
+  color: #153a5f;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  vertical-align: center;
+  margin-bottom: 15px;
+  padding: 5px 20px;
+  
+}
+
+.statusBar-left ul li:nth-child(1){
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  width: 80%;
+  margin-top: 80px;
+  margin-left: 75px;
+  margin-bottom: 75px;
+  list-style: none;
+  color: #fff;
+  background-color: 	rgba(21, 58, 95, 0.8);
+}
+
+
+.score {
+  font-weight: 800;
+  text-align: center;
+  font-size: 1.5em;
+  
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr 0.5fr;
+  grid-template-rows: 30% 65% 5%;
+  /*background-image: url('./images/Fon_1.png');*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  
+}
+
+.cards-container {
+  background-color: 	rgba(21, 58, 95, 0.8);
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.footer {
+  display: flex;
+  background-color: 	rgba(21, 58, 95, 0.8);
+  grid-column-start: 2;
+  grid-row-start: 3;
+  color:rgba(126, 226, 243, 0.8);
+
+}
+
+.footer-left-part {
+  width: 30%;
+  display: flex;
+  gap: 10px;
+  padding-left: 2em;
+  padding-bottom: 1em;
+}
+.footer-left-part div {
+  background-color: rgba(1, 33, 65, 0.8);
+}
+
+.footer-right-part span {
+  background-color: rgba(1, 33, 65, 0.8);
+}
+
+
+.footer-right-part {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2em;
+  padding-bottom: 1em;
+  gap: 10px;
+}
+.info-card {
+  width: 250px;
+  height: 350px;
+  background-color: rgba(101,254,8,0.3);
+}
+
+.game-card {
+  width: 200px;
+  height: 350px;
+  background-color:rgba(95, 35, 82, 0.8)
 }
